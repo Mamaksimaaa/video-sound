@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallpaper</title>
+    <meta
+      name="description"
+      content="Полноэкранный видеоролик в качестве фона с музыкой"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wallpaper" aria-label="Фоновое видео">
+      <video
+        id="video"
+        class="wallpaper__video"
+        playsinline
+        autoplay
+        loop
+        muted
+        preload="auto"
+        poster=""
+      >
+        <source
+          src="https://raw.githubusercontent.com/Mamaksimaaa/video-sound/main/gabimaru-hollow-flame.3840x2160.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <audio id="audio" loop preload="auto">
+        <source
+          src="https://raw.githubusercontent.com/Mamaksimaaa/video-sound/main/B%C3%B4a%20-%20Duvet.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+
+      <button id="soundToggle" class="sound-toggle" type="button" aria-label="Включить звук">
+        Включить звук
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
